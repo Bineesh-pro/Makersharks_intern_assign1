@@ -30,6 +30,10 @@ public class AppUserService {
         return Optional.ofNullable(appUserRepo.findByUserEmail(userEmail)).orElseThrow(()->new UserNotFoundException("no such user found"));
     }
 
+    public void clearDb(){
+        appUserRepo.deleteAll();
+    }
+
 
 
 

@@ -22,6 +22,7 @@ public class MakersharksassignmentApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
+        appUserService.clearDb();
         appUserService.registerUser(new AppUser(0,"MakerSharks","makersharks@gmail.com","makersharks@2025","ADMIN"));
         appUserService.registerUser(new AppUser(0,"Bineesh","bineesh@gmail.com","bineesh@2025","USER"));
     }
