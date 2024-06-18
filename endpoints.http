@@ -1,0 +1,21 @@
+
+
+
+GET http://localhost:8080/api/user/fetch?mail=bineesh@gmail.com
+#Authorization: Basic bineesh@gmail.com bineesh@2003
+Authorization: Basic makersharks@gmail.com makersharks@2025
+
+
+###
+
+POST localhost:8080/api/user/register
+Content-Type: application/json
+
+{
+  "userId": 0,
+  "userName": "Bineesh",
+  "userEmail": "bineesh@gmail.com",
+  "userPassword": "bineesh@2003",
+  "userRoles": "ADMIN,USER"
+}
+
